@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/stardew-valley-wiki-ng",
+    "deploy": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/stardew-valley-wiki-ng/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
