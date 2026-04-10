@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "stardew_valley_wiki_improved": {
+    "stardew-valley-wiki-ng": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,10 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "./docs/stardew-valley-wiki-v2",
-              "browser": ""
-            },
+            "outputPath": "dist/stardew-valley-wiki-ng",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -60,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "stardew_valley_wiki_improved:build:production"
+              "buildTarget": "stardew-valley-wiki-ng:build:production"
             },
             "development": {
-              "buildTarget": "stardew_valley_wiki_improved:build:development"
+              "buildTarget": "stardew-valley-wiki-ng:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "stardew_valley_wiki_improved:build"
+            "buildTarget": "stardew-valley-wiki-ng:build"
           }
         },
         "test": {

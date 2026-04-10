@@ -1,10 +1,11 @@
 {
-  "name": "stardew-valley-wiki-improved",
+  "name": "stardew-valley-wiki-ng",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/stardew-valley-wiki-ng",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
